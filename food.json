@@ -1,0 +1,343 @@
+{
+    "foodFamily": [
+        {
+            "id": 16,
+            "name": "Fındık",
+            "prob": 0.548828125
+        },
+        {
+            "id": 3,
+            "name": "Süt Ürünleri",
+            "prob": 0.451416015625
+        }
+    ],
+    "foodType": {
+        "id": 1,
+        "name": "Gıda"
+    },
+    "imageId": 1455007,
+    "model_versions": {
+        "drinks": "v1.0",
+        "foodType": "v1.0",
+        "foodgroups": "v1.0",
+        "foodrec": "v1.0",
+        "ingredients": "v1.0",
+        "ontology": "v1.0",
+        "segmentation": "v1.0"
+    },
+    "occasion": "lunch",
+    "segmentation_results": [
+        {
+            "center": {
+                "x": 308,
+                "y": 423
+            },
+            "contained_bbox": {
+                "h": 333,
+                "w": 516,
+                "x": 50,
+                "y": 257
+            },
+            "food_item_position": 1,
+            "recognition_results": [
+                {
+                    "foodFamily": [
+                        {
+                            "id": 2,
+                            "name": "tatlılar"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Süt Ürünleri"
+                        }
+                    ],
+                    "foodType": {
+                        "id": 1,
+                        "name": "Gıda"
+                    },
+                    "id": 772,
+                    "name": "puf böreği",
+                    "prob": 0.2437212068135848,
+                    "subclasses": [
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 2,
+                                    "name": "tatlılar"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Süt Ürünleri"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 793,
+                            "name": "çikolata profiterol",
+                            "prob": 0.2437212068135848
+                        },
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 2,
+                                    "name": "tatlılar"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Süt Ürünleri"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 2010,
+                            "name": "krem şanti ile kremalı puf",
+                            "prob": 0.2437212068135848
+                        },
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 2,
+                                    "name": "tatlılar"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Süt Ürünleri"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 2100,
+                            "name": "profiterol",
+                            "prob": 0.2437212068135848
+                        }
+                    ]
+                },
+                {
+                    "foodFamily": [
+                        {
+                            "id": 2,
+                            "name": "tatlılar"
+                        },
+                        {
+                            "id": 16,
+                            "name": "Fındık"
+                        }
+                    ],
+                    "foodType": {
+                        "id": 1,
+                        "name": "Gıda"
+                    },
+                    "id": 601,
+                    "name": "baklava",
+                    "prob": 0.21885975392107085,
+                    "subclasses": []
+                },
+                {
+                    "foodFamily": [
+                        {
+                            "id": 2,
+                            "name": "tatlılar"
+                        },
+                        {
+                            "id": 6,
+                            "name": "meyve"
+                        }
+                    ],
+                    "foodType": {
+                        "id": 1,
+                        "name": "Gıda"
+                    },
+                    "id": 1789,
+                    "name": "elmalı turta",
+                    "prob": 0.2005362992294894,
+                    "subclasses": [
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 2,
+                                    "name": "tatlılar"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Süt Ürünleri"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 1980,
+                            "name": "kırıntı pasta",
+                            "prob": 0.2005362992294894
+                        },
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 2,
+                                    "name": "tatlılar"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "meyve"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 2595,
+                            "name": "yaban mersini parçalamak pasta",
+                            "prob": 0.2005362992294894
+                        },
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 2,
+                                    "name": "tatlılar"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "meyve"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 2596,
+                            "name": "elma parçalamak pasta",
+                            "prob": 0.2005362992294894
+                        },
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 2,
+                                    "name": "tatlılar"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "meyve"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 2597,
+                            "name": "şeftali kırıntı pasta",
+                            "prob": 0.2005362992294894
+                        }
+                    ]
+                },
+                {
+                    "foodFamily": [
+                        {
+                            "id": 2,
+                            "name": "tatlılar"
+                        }
+                    ],
+                    "foodType": {
+                        "id": 1,
+                        "name": "Gıda"
+                    },
+                    "id": 870,
+                    "name": "çikolatalı kruvasan",
+                    "prob": 0.17252839872314613,
+                    "subclasses": [
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 2,
+                                    "name": "tatlılar"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 2456,
+                            "name": "düzenli kruvasan",
+                            "prob": 0.17252839872314613
+                        },
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 2,
+                                    "name": "tatlılar"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 182,
+                            "name": "kruvasan",
+                            "prob": 0.17252839872314613
+                        },
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 2,
+                                    "name": "tatlılar"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 2455,
+                            "name": "tereyağı kruvasanı",
+                            "prob": 0.17252839872314613
+                        }
+                    ]
+                },
+                {
+                    "foodFamily": [
+                        {
+                            "id": 1,
+                            "name": "et"
+                        },
+                        {
+                            "id": 10,
+                            "name": "ekmek"
+                        }
+                    ],
+                    "foodType": {
+                        "id": 1,
+                        "name": "Gıda"
+                    },
+                    "id": 2093,
+                    "name": "sosisli börek",
+                    "prob": 0.16435434131270887,
+                    "subclasses": [
+                        {
+                            "foodFamily": [
+                                {
+                                    "id": 1,
+                                    "name": "et"
+                                },
+                                {
+                                    "id": 10,
+                                    "name": "ekmek"
+                                }
+                            ],
+                            "foodType": {
+                                "id": 1,
+                                "name": "Gıda"
+                            },
+                            "id": 2147,
+                            "name": "sosisli börek",
+                            "prob": 0.16435434131270887
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
