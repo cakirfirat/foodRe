@@ -20,7 +20,7 @@ func FoodHandler(w http.ResponseWriter, r *http.Request) {
 
 	r.ParseMultipartForm(10 << 20)
 
-	file, _, err := r.FormFile("myFile")
+	file, _, err := r.FormFile("image")
 
 	authForLogMeal := r.FormValue("apiKeyLogMeal")
 	edamamAppId := r.FormValue("edamamAppId")
@@ -33,7 +33,7 @@ func FoodHandler(w http.ResponseWriter, r *http.Request) {
 
 	defer file.Close()
 
-	tempFile, err := ioutil.TempFile("../uploadss", "upload-*.jpg")
+	tempFile, err := ioutil.TempFile("../uploads", "upload-*.jpg")
 	if err != nil {
 		CheckError(err)
 		return
@@ -43,7 +43,6 @@ func FoodHandler(w http.ResponseWriter, r *http.Request) {
 	fileBytes, err := ioutil.ReadAll(file)
 	if err != nil {
 		CheckError(err)
-		return
 	}
 	tempFile.Write(fileBytes)
 
@@ -52,7 +51,7 @@ func FoodHandler(w http.ResponseWriter, r *http.Request) {
 
 	var foodData RecognizedFood
 
-	result := call("https://api.logmeal.es/v2/image/segmentation/complete/v1.0", "POST", tempFile.Name(), authForLogMeal)
+	result := calls("https://api.logmeal.es/v2/image/segmentation/complete/v1.0", "POST", tempFile.Name(), authForLogMeal)
 
 	if err := json.Unmarshal(result, &foodData); err != nil {
 		panic(err)
@@ -73,7 +72,7 @@ func FoodHandler(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func call(urlPath, method, namesFile, authForLogMeal string) []byte {
+func calls(urlPath, method, namesFile, authForLogMeal string) []byte {
 	client := &http.Client{
 		Timeout: time.Second * 10,
 	}
